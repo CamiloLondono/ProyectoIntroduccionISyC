@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #3a3a3a;
 }
 
 header {
@@ -21,7 +21,7 @@ nav a {
 section {
     padding: 20px;
     margin: 20px;
-    background: white;
+    background: rgb(204, 203, 202);
     border-radius: 10px;
 }
 
@@ -37,5 +37,5 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #222;
-    color: white;
+    color: rgb(173, 173, 173);
 }
