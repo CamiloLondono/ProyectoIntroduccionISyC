@@ -31,3 +31,28 @@ button {
 button:hover {
   background-color: #187bcd;
 }
+#letras {
+  margin-top: 20px;
+}
+
+#letras button {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+#mensaje {
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#vidas {
+  font-size: 20px;
+}
+#letras button.usada {
+  background-color: #aaa;
+  color: #fff;
+  cursor: not-allowed;
+}
