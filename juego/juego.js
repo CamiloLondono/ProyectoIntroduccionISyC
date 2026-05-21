@@ -29,15 +29,18 @@ function iniciarJuego() {
   palabraOculta = Array(palabra.length).fill("_");
   intentos = 6;
 
+  document.getElementById("ahorcado-img").src = "img/ahorcado0.jpg";
+
   document.getElementById("mensaje").textContent = "";
+
   document.getElementById("categoria").textContent =
     "Categoría: " + categoriaActual;
+
   document.getElementById("pista").textContent = "Pista: " + pistas[palabra];
 
   actualizarPantalla();
   generarBotones();
 }
-
 function actualizarPantalla() {
   document.getElementById("palabra").textContent = palabraOculta.join(" ");
   document.getElementById("intentos").textContent = intentos;
@@ -112,6 +115,5 @@ function reiniciarJuego() {
 }
 
 iniciarJuego(
-  (document.getElementById("ahorcado-img").src =
-    "img/ahorcado" + errores + ".jpg"),
+  (document.getElementById("ahorcado-img").src = "img/ahorcado0.jpg"),
 );
