@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <h1>🧠 Método del Ingeniero</h1>
+      <h1>Método del Ingeniero</h1>
       <nav>
         <a href="index.html">Inicio</a>
         <a href="pasos.html">7 Pasos</a>
@@ -16,6 +16,25 @@
     </header>
 
     <section>
+      <h2>Video explicativo del proyecto</h2>
+
+      <p>
+        En el siguiente video se presenta una explicación general del proyecto,
+        el problema identificado y la aplicación de los siete pasos del método
+        del ingeniero.
+      </p>
+
+      <div class="video-contenedor">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/TU_VIDEO"
+          frameborder="0"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
       <h2>1. Identificación del problema</h2>
       <p>
         Muchos estudiantes presentan dificultad para aprender vocabulario en
@@ -27,7 +46,7 @@
       <p>
         Se investigaron métodos de aprendizaje del inglés y juegos educativos.
         Se encontró que el aprendizaje basado en juegos mejora la retención de
-        información. Se revisaron ejemplos de juegos educativos como
+        información. Se revisaron ejemplos de juegos educativos, como
         aplicaciones móviles y juegos tradicionales adaptados al aprendizaje.
         Como ejemplo de aprendizaje basado en juegos, se encontró el juego
         "Duolingo", que utiliza la gamificación para enseñar idiomas de manera
@@ -41,6 +60,47 @@
         de vocabulario en inglés:
       </p>
 
+      <div class="ideas-juegos">
+        <div class="idea">
+          <h3>Juego de ruleta en inglés</h3>
+          <p>
+            Consistía en una ruleta interactiva donde el usuario debía girar
+            para obtener palabras o preguntas en inglés relacionadas con
+            diferentes categorías. La idea buscaba hacer el aprendizaje más
+            dinámico y aleatorio.
+          </p>
+        </div>
+
+        <div class="idea">
+          <h3>Juego de preguntas tipo quiz</h3>
+          <p>
+            Este juego planteaba preguntas de selección múltiple relacionadas
+            con vocabulario, gramática y traducción en inglés. Su objetivo era
+            evaluar el conocimiento del usuario mediante respuestas correctas e
+            incorrectas.
+          </p>
+        </div>
+
+        <div class="idea">
+          <h3>Juego de completación de palabra oculta</h3>
+          <p>
+            La propuesta consistía en mostrar palabras incompletas para que el
+            usuario escribiera las letras faltantes. Esto permitiría reforzar el
+            reconocimiento y escritura correcta de palabras en inglés.
+          </p>
+        </div>
+
+        <div class="idea">
+          <h3>Juego del ahorcado</h3>
+          <p>
+            El juego consiste en adivinar palabras en inglés, letra por letra,
+            antes de agotar los intentos disponibles. Esta alternativa combina
+            aprendizaje, interacción y entretenimiento, fortaleciendo el
+            vocabulario de manera didáctica.
+          </p>
+        </div>
+      </div>
+
       <div class="imagenes-bocetos">
         <img src="img/ideas1.jpg" alt="Boceto 1" />
         <img src="img/ideas2.jpg" alt="Boceto 2" />
@@ -50,78 +110,143 @@
 
       <h2>4. Diseño preliminar</h2>
       <p>Se diseñó un juego donde:</p>
+
       <p>
         - El sistema selecciona una palabra en inglés al azar.<br />
-        - Se muestra con guiones ( _ _ _ _ )<br />
-        - El usuario ingresa letras Tiene 5 o 6 intentos.<br />
-        - Si falla, pierde una vida Si completa la palabra, gana.
+        - Se muestra con guiones (_ _ _ _).<br />
+        - El usuario ingresa letras y tiene 5 o 6 intentos.<br />
+        - Si falla, pierde una vida.<br />
+        - Si completa la palabra, gana.
       </p>
 
       <h2>5. Evaluación y selección</h2>
       <p>Criterios de selección:</p>
+
       <p>
-        - Fácil de programar<br />
-        - Interactivo<br />
-        - Refuerza vocabulario<br />
-        - Comprensible para cualquier usuario<br />
-        - Permite aprendizaje progresivo<br />
+        - Fácil de programar.<br />
+        - Interactivo.<br />
+        - Refuerza vocabulario.<br />
+        - Comprensible para cualquier usuario.<br />
+        - Permite aprendizaje progresivo.<br />
         Se seleccionó el juego del ahorcado porque cumple con los criterios de
         simplicidad, interactividad y aporte educativo.
       </p>
 
+      <table class="tabla">
+        <tr>
+          <th>Juego propuesto</th>
+          <th>Ventajas</th>
+          <th>Desventajas</th>
+          <th>Evaluación</th>
+        </tr>
+
+        <tr>
+          <td>Ruleta en inglés</td>
+          <td>Dinámico y entretenido para el usuario.</td>
+          <td>Requería mayor complejidad en animaciones y diseño.</td>
+          <td>Buena idea, pero compleja para el tiempo disponible.</td>
+        </tr>
+
+        <tr>
+          <td>Juego de preguntas tipo quiz</td>
+          <td>Fácil de desarrollar y educativo.</td>
+          <td>Poco interactivo y repetitivo.</td>
+          <td>No generaba suficiente dinamismo.</td>
+        </tr>
+
+        <tr>
+          <td>Juego de completación de palabra oculta</td>
+          <td>Ayuda al aprendizaje de vocabulario.</td>
+          <td>Menor interacción visual y jugabilidad limitada.</td>
+          <td>Interesante, pero menos entretenido para el usuario.</td>
+        </tr>
+
+        <tr>
+          <td>Juego del ahorcado</td>
+          <td>
+            Interactivo, dinámico y fácil de comprender. Refuerza el vocabulario
+            en inglés de manera entretenida.
+          </td>
+          <td>Requiere lógica de programación y control de intentos.</td>
+          <td>Fue la mejor solución seleccionada.</td>
+        </tr>
+      </table>
+
       <h2>6. Reportes y especificaciones</h2>
+
       <h3>Especificaciones técnicas</h3>
       <p>
-        El sistema desarrollado corresponde a un juego educativo tipo “ahorcado”
-        enfocado en el aprendizaje de vocabulario en inglés. El programa permite
-        la interacción del usuario mediante el ingreso de letras, validando cada
-        intento y mostrando el progreso de la palabra hasta completarla o perder
-        el juego.
+        El sistema desarrollado corresponde a un juego educativo tipo
+        “ahorcado”, enfocado en el aprendizaje de vocabulario en inglés. El
+        programa permite la interacción del usuario mediante el ingreso de
+        letras, validando cada intento y mostrando el progreso de la palabra
+        hasta completarla o perder el juego.
       </p>
 
       <ul>
-        <li>Tipo de sistema: Aplicación interactiva</li>
-        <li>Usuarios: Estudiantes</li>
-        <li>Función principal: Adivinar palabras en inglés</li>
-        <li>Entradas: Letras ingresadas por el usuario</li>
-        <li>Procesos: Validación de letras, control de intentos</li>
-        <li>Salidas: Mensajes de acierto, error, victoria o derrota</li>
+        <li>Tipo de sistema: Aplicación interactiva.</li>
+        <li>Usuarios: Estudiantes.</li>
+        <li>Función principal: Adivinar palabras en inglés.</li>
+        <li>Entradas: Letras ingresadas por el usuario.</li>
+        <li>Procesos: Validación de letras y control de intentos.</li>
+        <li>Salidas: Mensajes de acierto, error, victoria o derrota.</li>
       </ul>
 
       <h3>Lenguajes y tecnologías utilizadas</h3>
       <ul>
-        <li>HTML → estructura de la página web</li>
-        <li>CSS → diseño y estilos visuales</li>
+        <li>HTML → estructura de la página web.</li>
+        <li>CSS → diseño y estilos visuales.</li>
         <li>
-          (Aquí agregas el lenguaje de tu juego, por ejemplo: Java / Python /
-          MakeCode)
+          JS → lógica del juego, validación de entradas y control de flujo del
+          juego.
         </li>
       </ul>
 
       <h3>Evidencias del desarrollo</h3>
 
-      <p><strong>📌 Código del juego:</strong></p>
+      <p><strong>Código del juego:</strong></p>
+
       <img
-        src="img/codigo1.png"
+        src="img/pagina2.png"
         alt="Código del juego"
         class="imagenes-reporte"
       />
 
       <p><strong>Desarrollo de la página web:</strong></p>
+
       <img src="img/pagina1.png" alt="Página web" class="imagenes-reporte" />
 
       <h2>7. Implementación</h2>
       <p>
         El sistema permite al usuario ingresar letras, valida cada intento y
-        muestra el progreso hasta completar la palabra o perder. <br />
+        muestra el progreso hasta completar la palabra o perder.<br />
         - Se probó el funcionamiento.<br />
-        - Se corrigieron errores. <br />
+        - Se corrigieron errores.<br />
         - Se verificó que cumpla el objetivo educativo.
       </p>
+
+      <h2>Video del juego en funcionamiento</h2>
+
+      <p>
+        A continuación, se muestra un video demostrando el funcionamiento del
+        juego, la interacción del usuario y las principales características
+        implementadas.
+      </p>
+
+      <div class="video-contenedor">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/TU_VIDEO_FUNCIONANDO"
+          frameborder="0"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
     </section>
 
     <footer>
-      <p>Proyecto escolar</p>
+      <p>Proyecto escolar.</p>
     </footer>
   </body>
 </html>
