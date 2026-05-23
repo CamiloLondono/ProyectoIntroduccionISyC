@@ -79,7 +79,7 @@ function comprobarLetra(letra) {
 
   if (!acierto) {
     intentos--;
-    actualizarAhorcado(); // 🔥 aquí cambia la imagen
+    actualizarAhorcado();
   }
 
   actualizarPantalla();
